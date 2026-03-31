@@ -1,0 +1,3 @@
+Future Goal: 
+Mastering Data Structures and Algorithms (DSA)
+Starting with Linked Lists and Stacks.
