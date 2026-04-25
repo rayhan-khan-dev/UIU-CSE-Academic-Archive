@@ -1,9 +1,8 @@
 #include<stdio.h>
 int main() {
 
-int n,num,count=0;
-float sum = 0; average;
-
+int n,num, average,count=0;
+float sum = 0;
 printf("please enter the number of integers: ");
 scanf("%d",&n);
 
