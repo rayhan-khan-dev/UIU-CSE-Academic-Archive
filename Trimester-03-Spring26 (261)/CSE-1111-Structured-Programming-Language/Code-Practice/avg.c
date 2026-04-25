@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main() {
 
-int n,num,count=0;
-float sum = 0; average;
+int n,avg,num,count=0;
+float sum = 0; 
 
 printf("please enter the number of integers: ");
 scanf("%d",&n);
@@ -14,10 +14,10 @@ while(count<n){
     if(num>0){
         count++;
         sum = sum + num;
-        average = sum/count;
+        avg = sum/count;
 
-printf("Average Calculation: %.2f / %d = %.2f\n", sum, count, average);
-            printf("Output: %.2f\n\n", average);
+printf("Average Calculation: %.2f / %d = %.2f\n", sum, count, avg);
+            printf("Output: %.2f\n\n", avg);
 
     }
     else{
