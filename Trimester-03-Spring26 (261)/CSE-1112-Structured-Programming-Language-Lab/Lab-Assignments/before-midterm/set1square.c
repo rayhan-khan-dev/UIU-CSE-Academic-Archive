@@ -1,21 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h> 
 
 int main() {
     int n;
     if (scanf("%d", &n) != 1) return 0;
 
-    int mid = n / 2; 
     for (int i = 0; i < n; i++) {       
         for (int j = 0; j < n; j++) {   
             
-            
-            if (abs(mid - i) + abs(mid - j) == mid) {
+            if (i == 0) {
+               
                 printf("@");
-            } else {
+            } 
+            else if (j == 0) {
+                
+                printf("@");
+            } 
+            else if (j == n - 1 - i) {
+                
+                printf("@");
+            } 
+            else {
+         
                 printf(".");
             }
         }
+        
         printf("\n");
     }
 
