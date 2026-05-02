@@ -17,3 +17,5 @@ int main (void) {
     printf ("The gcd of 83 and 240 is %i\n", gcd (83, 240)); 
     return 0;
  }
+ 
+ //gcd prblm is to find the greatest common divisor of two integers. The function gcd takes two integers as input and returns their greatest common divisor using the Euclidean algorithm. The main function demonstrates the use of the gcd function by calculating and printing the greatest common divisor of several pairs of integers.
