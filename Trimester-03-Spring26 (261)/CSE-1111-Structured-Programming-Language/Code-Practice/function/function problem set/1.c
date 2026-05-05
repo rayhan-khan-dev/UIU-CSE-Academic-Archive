@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
+void showingMssg();
 
+int main (){
 
-void displayMessage() {
-    printf("This is a function\n");
+    showingMssg();
+    return 0;
 }
 
-int main() {
-   
-    displayMessage();
-    return 0;
+void showingMssg() {
+
+    printf("This is function");
 }

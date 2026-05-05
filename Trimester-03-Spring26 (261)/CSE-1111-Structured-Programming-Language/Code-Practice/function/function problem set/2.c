@@ -1,14 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void printChar(char c) {
-    printf("Value received from main: %c\n", c);
+void printValue(char val);
+
+int main () {
+
+    char input;
+    printf("Enter a character: ");
+    scanf("%c", &input);
+
+
+    printf("Value recieved from main: %c\n", input);
+    printValue(input);
+
+ return 0;
+
 }
 
-int main() {
-    char val;
-    printf("Enter a character: ");
-    scanf("%c", &val);
-    
-    printChar(val);
-    return 0;
+void printValue(char val){
+    printf("%c\n", val);
 }
