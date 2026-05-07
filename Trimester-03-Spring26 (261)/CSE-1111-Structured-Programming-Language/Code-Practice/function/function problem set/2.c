@@ -11,11 +11,11 @@ int main () {
 
     printf("Value recieved from main: %c\n", input);
     printValue(input);
-
- return 0;
+ 
+  return 0;
 
 }
 
-void printValue(char val){
+void  printValue(char val){
     printf("%c\n", val);
 }
