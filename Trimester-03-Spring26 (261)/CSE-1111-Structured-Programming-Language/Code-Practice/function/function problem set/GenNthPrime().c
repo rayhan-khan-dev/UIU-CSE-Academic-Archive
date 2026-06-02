@@ -39,17 +39,6 @@ int GenNthPrime(int N)
         }
 
         num++;
-
-        {
-            printf("Prime numbers are less than %d: ", N);
-
-            for (int i = 2; i < N; i++)
-                if (IsPrime(i) == 1)
-
-                {
-                    printf("%d ", i);
-                }
-        }
     }
 
     return num;
