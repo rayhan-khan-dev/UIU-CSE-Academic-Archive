@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <math.h> 
-
+#include <math.h>
 
 void TakeInput(float arr[], int size)
 {
@@ -12,7 +11,6 @@ void TakeInput(float arr[], int size)
     }
 }
 
-
 float CalcMean(float arr[], int size)
 {
     float sum = 0.0;
@@ -21,9 +19,8 @@ float CalcMean(float arr[], int size)
     {
         sum += arr[i];
     }
-    return sum / size;ে
+    return sum / size;
 }
-
 
 float Calc_Std_deviation(float arr[], int size)
 {
@@ -32,13 +29,11 @@ float Calc_Std_deviation(float arr[], int size)
     float sum_of_squares = 0.0;
     int i;
 
-   
     for (i = 0; i < size; i++)
     {
-        sum_of_squares += pow(arr[i] - mean, 2); 
+        sum_of_squares += pow(arr[i] - mean, 2);
     }
 
- 
     return sqrt(sum_of_squares / size);
 }
 
@@ -51,12 +46,9 @@ int main()
 
     float num_array[n];
 
-
     TakeInput(num_array, n);
 
-    
     float std_dev = Calc_Std_deviation(num_array, n);
-
 
     printf("Standard Deviation: %.2f\n", std_dev);
 
