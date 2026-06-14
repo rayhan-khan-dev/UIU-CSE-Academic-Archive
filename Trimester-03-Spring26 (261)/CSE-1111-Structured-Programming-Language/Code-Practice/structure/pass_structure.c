@@ -10,12 +10,10 @@ typedef struct student
 
 } st;
 
-int main()
+void input(st student[], int size)
 {
 
-    st student[2];
-
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < size; i++)
     {
 
         printf("\nEnter The Info of Student %d\n", i + 1);
@@ -29,8 +27,12 @@ int main()
         printf("Enter Your CGPA: ");
         scanf("%f", &student[i].cgpa);
     }
+}
 
-    for (int i = 0; i < 3; i++)
+void output(st student[], int size)
+{
+
+    for (int i = 0; i < size; i++)
     {
 
         printf("\nStudent NO. %d", i + 1);
@@ -38,13 +40,17 @@ int main()
         printf("\nStudent ID : %d", student[i].id);
         printf("\nStudent CGPA : %.2f\n", student[i].cgpa);
     }
+}
+
+void FindMaxCgpa(st student[], int size)
+{
 
     float maxCgpa = student[0].cgpa;
     int index = 0;
 
     int i = 1;
 
-    while (i < 3)
+    while (i < size)
     {
         if (student[i].cgpa > maxCgpa)
         {
@@ -59,6 +65,18 @@ int main()
     printf("\nStudent Name : %s", student[index].name);
     printf("\nStudent ID : %d", student[index].id);
     printf("\nStudent CGPA : %.2f", student[index].cgpa);
+}
 
-    return 0;
+int main()
+{
+
+    int n;
+    printf("Enter the size: ");
+    scanf("%d", &n);
+
+    st student[n];
+
+    input(student, n);
+    output(student, n);
+    FindMaxCgpa(student, n);
 }
